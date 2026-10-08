@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+     <script type="text/javascript">
+        var no,a,b,c,d,sum=0
+
+        no=parseInt(prompt("Enter Your No:"))
+        
+        a=no%10
+        b=Math.floor(no/10)
+        c=b%10
+        d=Math.floor(b/10)
+    
+        sum=a*100+c*10+d*1
+        if(no==sum)
+    {
+        document.write("Palindrom number")
+    }
+    else
+    { 
+        document.write("Not Palindrome Number")
+    }
+    </script>
+</body>
+</html>

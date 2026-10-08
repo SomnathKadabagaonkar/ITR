@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse</title>
+</head>
+<body>
+    <script>
+        var no,rev=0,rem;
+        no=eval(prompt("Enter the Number"))
+        org=no
+        while(no>0)
+    {
+        rem=no%10;
+        rev=rev*10+rem;
+        no=Math.floor(no/10)
+    }
+    if(org==rev)
+    {
+    document.write("Palindrome")
+    }
+    else
+    {
+    document.write("Not Palindrome")
+    }
+    </script>
+</body>
+</html>

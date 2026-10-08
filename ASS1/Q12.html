@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse</title>
+</head>
+<body>
+       <script>
+        var num,a,b,c,d,e,f,g,rev;
+        num=eval(prompt("Enter The Number For Sum OF Three Digits"))
+        document.write("Number No:"+num)
+       a=num%10;
+       b=Math.floor(num/10);
+       c=b%10;
+       d=Math.floor(b/10);
+       e=d%10;
+       f=Math.floor(d/10);
+       g=f%10;
+       
+      
+       rev=(a*1000+c*100+e*10+g)
+        document.write("<br>Reverse OF Number = "+rev)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avg</title>
+</head>
+<body>
+    <script>
+    
+    var no,rem,sum=0,counter=0,avg;
+    no=eval(prompt("Enter the Number"))
+    while(no>0)
+    {
+        rem=no%10
+        sum=sum+rem
+        counter++
+        no=Math.floor(no/10)
+    }  
+    avg=sum/counter
+    document.write("sum="+sum)
+    document.write("<br>Avg="+avg)
+    </script>
+</body>
+</html>

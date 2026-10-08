@@ -1,0 +1,31 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prime In LIst 1-100</title>
+    </head>
+    <body>
+        <script>   
+        var n,flag=0,i=2; 
+        n=parseInt(prompt("enter the number"))           
+        while(i<n)
+        {
+            if(n%i==0)
+        {
+            flag=1; 
+            break; 
+        }
+        i++;
+        }
+        if(flag==0)
+        {
+            document.write("Prime")
+        }
+        else
+        {
+            document.write("Not Prime")
+        }
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avg</title>
+</head>
+<body>
+    <script>
+        var num,a,b,c,d,e,f,g,h,i,j;
+        num=eval(prompt("Enter The Number For Sum OF Three Digits"))
+        document.write("Number No:"+num)
+       a=num%10;
+       b=Math.floor(num/10);
+       c=b%10;
+       d=Math.floor(b/10);
+       e=d%10;
+       f=Math.floor(d/10);
+       g=f%10;
+       h=Math.floor(f/10);
+      
+       avg=(a+c+e+g+h)/5;
+        document.write("<br>Avg Of % digit Number = "+avg)
+    </script>
+</body>
+</html>

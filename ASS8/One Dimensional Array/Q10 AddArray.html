@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Array</title>
+</head>
+<body>
+    <script>
+        var arr1,arr2,add;
+        arr1=new Array(10)
+        arr2=new Array(10)
+        add=new Array(10)
+
+            document.write("Array First :")
+
+    for(i=0;i<arr1.length;i++)
+    {
+    arr1[i]=parseInt(prompt("Enter 1st Array 10 Elements:"))
+    document.write("<br>"+arr1[i])
+    }
+            document.write("<br>Array Second :")
+
+    for(i=0;i<arr2.length;i++)
+    {
+    arr2[i]=parseInt(prompt("Enter 2nd Array 10 Elements:"))
+    document.write("<br>"+arr2[i])
+    }
+                document.write("<br>Array After Adding :")
+    for(i=0;i<add.length;i++)
+    {
+    add[i]=arr1[i]+arr2[i];
+        document.write(+add[i])
+    }
+    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 1-N EOSum</title>
+</head>
+<body>
+    <script>
+        var i,n,sum=0,sum1=0;
+        n=eval(prompt("Enter The Range"))
+        for(let i=1;i<=n;i++)
+        {
+            if(i%2==0)
+            {
+            sum=sum+i
+            }
+            if(i%2==1)
+            {
+            sum1=sum1+i
+            }
+        }
+        document.write("Sum of even="+sum)
+        document.write("<br>Sum of Odd="+sum1)
+
+    </script>
+</body>
+</html>

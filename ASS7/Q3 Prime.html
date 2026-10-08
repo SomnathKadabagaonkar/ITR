@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Numbers 1-100</title>
+</head>
+<body>
+    <script>
+          document.write("<select>")
+
+      for(i=1;i<=100;i++)
+        {
+          no=i;
+          var flag=0;
+         for(j=2;j<no;j++)
+         {
+         if(no%j==0)
+         {
+         flag=1
+         }
+        }
+      if(flag==0)
+      {
+        document.write("<option>"+i+"</option>")
+      }
+      
+    }
+    document.write("</select>")
+   
+    
+     for(m=1;m<=100;m++)
+        {
+          no1=m;
+          var flag1=0;
+          for(n=2;n<no1;n++)
+         {
+         if(no1%n==0)
+         {
+         flag1=1;
+         }
+        }
+      if(flag1==0)
+      {
+        document.write("<br><ul><li>"+m+"</li></ul>")
+      }
+      
+    }
+      
+    </script>
+</body>
+</html>

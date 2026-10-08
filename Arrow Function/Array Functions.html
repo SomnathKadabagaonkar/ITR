@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array Functions</title>
+</head>
+<body>
+    <script>
+        let arr=[1,2,3,4,5];
+        document.write("Og array = "+arr+"<br><br>");
+
+         arr.push(6);
+        document.write("arr.push(6); = "+arr+"<br><br>");
+
+        arr.pop();
+        document.write("arr.pop(); = "+arr+"<br><br>");
+
+        arr.unshift(0);
+        document.write("arr.unshift(0); = "+arr+"<br><br>");
+
+        arr.shift(0);
+        document.write("arr.shift(0); = "+arr+"<br><br>");
+
+
+        arr.slice(0,2);
+        document.write("arr.slice(0,2); = "+arr.slice(0,2)+"<br><br>");
+
+
+        arr.splice(2,2,5);
+        document.write("aarr.splice(2,2,5); = "+arr+"<br><br>");
+
+
+        arr.indexOf(2);
+        document.write("arr.indexOf(2); = "+arr.indexOf(2)+"<br><br>");
+
+
+        arr.includes(2);
+        document.write("arr.includes(2); = "+arr.includes(2)+"<br><br>");
+
+
+        // arr.forEach();
+
+document.write("arr.forEach():<br>");
+arr.forEach(function(value, index) {
+    document.write("Index " + index + ": " + value + "<br>");
+});
+document.write("<br><br>");        
+
+
+        document.write("arr.indexOf(2); = "+arr.indexOf(2)+"<br><br>");
+        
+        
+        document.write("arr.map(x => x * x) = "+arr.map(x => x * x)+"<br><br>");
+
+
+        document.write("arr.filter(x => x % 2 == 0); = "+arr.filter(x => x % 2 == 0)+"<br><br>");
+
+
+        document.write("arr.reduce((total, value) => total + value, 0); = "+arr.reduce((total, value) => total + value, 0)+"<br><br>");
+        
+        
+        document.write("[3,1,2,5,7,9].sort(); = "+[3,1,2,5,7,9].sort()+"<br><br>");
+
+        document.write("arr.reverse() = "+arr.reverse()+"<br><br>");
+
+
+        document.write("arr.join('-') = "+arr.join('-')+"<br><br>");
+
+
+        document.write(" arr.concat([4, 5]) = "+ arr.concat([4, 5])+"<br><br>");
+
+
+        document.write(" arr.find(x => x > 2); = "+ arr.find(x => x > 2)+"<br><br>");
+
+
+let fruits = ['apple', 'banana', 'cherry'];
+document.write("fruits.includes('banana'=  "+fruits.includes('banana')+"<br><br>");  // true
+document.write("fruits.indexOf('cherry')=  "+fruits.indexOf('cherry')+"<br><br>");   // 2
+fruits.push('date');
+document.write(fruits); // ['apple', 'banana', 'cherry', 'date']
+    
+
+        
+
+
+    </script>
+</body>
+</html>

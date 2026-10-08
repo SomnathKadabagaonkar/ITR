@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum</title>
+</head>
+<body>
+    <script>
+    
+    var no,rem,sum=0;
+    no=eval(prompt("Enter the Number"))
+    while(no!=0)
+    {
+        rem=no%10
+        sum=sum +rem
+        no=no/10
+    }  
+    document.write(Math.floor(sum))
+
+    </script>
+</body>
+</html>

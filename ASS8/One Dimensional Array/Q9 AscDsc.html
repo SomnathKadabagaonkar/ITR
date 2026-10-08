@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AscDesc</title>
+</head>
+<body>
+    <script>
+    var arr=new Array(5)
+    var asc,desc;
+       document.write("<br>Array Elements Are :")
+
+    for(i=0;i<5;i++)
+    {
+        arr[i]=eval(prompt("Enter Your Array Of 5 Numbers"))
+        document.write("<br>"+arr[i])
+    }  
+    asc = arr.slice().sort((a, b) => a - b)
+    desc= arr.slice().sort((a, b) => b - a)
+
+   document.write("<br>Array Sorted :")
+   document.write("<br>Ascending Order = "+asc)  
+   document.write("<br>Descending Order = "+desc)  
+
+
+    </script>
+</body>
+</html>

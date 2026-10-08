@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse</title>
+</head>
+<body>
+    <script>
+        var no,ecount=0,ocount=0,i=0,sum=0,sum1=0;
+        no=parseInt(prompt("Enter the Number"))
+        while(i<=no)
+        {
+        if(i%2==0)
+        {
+             ecount=ecount+1;
+             sum=sum+i;
+             i++;
+        }
+        else 
+        { 
+         ocount=ocount+1;
+         sum1=sum1+i;
+         i++;
+        }
+        }
+      document.write("Even No"+ecount)
+      document.write("<br>ODD No"+ocount)
+      document.write("<br>Sum of Even(Ecount)"+sum)
+      document.write("<br>Sum of ODD(Ocount)"+sum1)
+    </script>
+</body>
+</html>

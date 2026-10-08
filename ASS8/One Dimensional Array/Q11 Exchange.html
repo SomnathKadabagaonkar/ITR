@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swap Two Arrays</title>
+</head>
+<body>
+
+<script>
+  let arr1 = new Array(10);
+  let arr2 = new Array(10);
+  let temp;
+  document.write("Array First:<br>");
+  for (let i = 0; i < 10; i++) 
+  {
+    arr1[i] = parseInt(prompt("Enter element " + (i+1) + " for 1st Array:"));
+    document.write(arr1[i] + "<br>");
+  }
+
+  document.write("<br>Array Second:<br>");
+  for (let i = 0; i < 10; i++)
+   {
+    arr2[i] = parseInt(prompt("Enter element " + (i+1) + " for 2nd Array:"));
+    document.write(arr2[i] + "<br>");
+  }
+
+  for (let i = 0; i < 10; i++) 
+  {
+    temp = arr1[i];
+    arr1[i] = arr2[i];
+    arr2[i] = temp;
+  }
+
+  document.write("<br>Array1 After Swapping:<br>");
+  for (let i = 0; i < 10; i++)
+  {
+    document.write(arr1[i]);
+  }
+
+  document.write("<br>Array2 After Swapping:<br>");
+  for (let i = 0; i < 10; i++) 
+  {
+    document.write(arr2[i]);
+  }
+</script>
+
+</body>
+</html>

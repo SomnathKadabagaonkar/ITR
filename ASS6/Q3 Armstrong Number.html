@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number</title>
+</head>
+<body>
+    <script>
+        var no,rem,arm=0;
+        no=eval(prompt("Enter The Number"))
+        org=no
+        while(no>0)
+    {
+        rem=no%10;
+        arm=arm+rem*rem*rem
+        no=Math.floor(no/10)
+        
+    }
+    if(org==arm)
+    {
+        document.write("Armstrong Number")
+    }
+    else
+    {
+        document.write("Not Armstrong Number")
+    }
+    </script>
+</body>
+</html>
