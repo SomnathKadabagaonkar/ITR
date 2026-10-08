@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4</title>
+</head>
+
+<body>
+    <script>
+        const myPromise = new Promise((_, reject) => {
+            setTimeout(() => {
+                reject("Error occurred");
+            }, 1000); 
+        });
+
+        myPromise.then((result) => {
+                console.log("Resolved:", result);
+            })
+            .catch((error) => {
+                console.log("Caught error:", error);
+            });
+    </script>
+</body>
+
+</html>

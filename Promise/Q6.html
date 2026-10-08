@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even or Odd Promise</title>
+</head>
+
+<body>
+    <script>
+        function checkEvenOrOdd(n) 
+        {
+            return new Promise((resolve, reject) =>
+            {
+                if (n%2==0)
+                {
+                    resolve(`${n} is an even number`);
+                } 
+                else 
+                {
+                    reject(`${n} is an odd number`);
+                }
+            });
+        }
+
+            checkEvenOrOdd(6).then((msg) => 
+            {
+                console.log("Resolved:", msg);
+            })
+            .catch((error) => 
+            {
+                console.log("Rejected:", error);
+            });
+
+
+            
+            checkEvenOrOdd(7).then((msg) => 
+            {
+                console.log("Resolved:", msg);
+            })
+            .catch((error) => 
+            {
+                console.log("Rejected:", error);
+            });
+    </script>
+</body>
+</html>

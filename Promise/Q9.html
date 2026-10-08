@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Q9 - Fake API with async/await</title>
+</head>
+
+<body>
+    <script>
+        function Userdata() 
+        {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve({ id: 1, name: "John Doe", email: "john@example.com" });
+                }, 1000);
+            });
+        }
+
+
+        async function getUser() 
+        {
+            const user = await Userdata();
+            console.log("User data received:");
+            console.log(user);
+        }
+
+        getUser();
+    </script>
+</body>
+</html>
