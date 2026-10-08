@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text -Q1</title>
+</head>
+<body>
+    <p id="MyPara">HI</p>
+    <input type="text" id="MyID" onchange="ChangeT()" placeholder="Type Something..">
+    
+    <script>
+        function ChangeT()
+        {
+        var para=document.getElementById("MyID").value;
+        document.getElementById("MyPara").innerHTML="Text Changed!!";
+        }
+    </script>
+</body>
+</html>
+

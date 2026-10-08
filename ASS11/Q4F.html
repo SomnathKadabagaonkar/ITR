@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>First List Item</title>
+</head>
+<body>
+
+  <ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+  </ul>
+
+  <button onclick="selectFirstItem()">Show First Item</button>
+  <div id="output"></div>
+
+  <script>
+    function selectFirstItem() 
+    {
+      var firstItem = document.querySelector("li"); 
+      var p=document.getElementById("output")
+      p.innerText= "First item is: " + firstItem.innerText;
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Average Of Digit</title>
+    </head>
+    <body>
+        <script>
+            function Avg(n)
+            {
+                var sum=0,rem,c=0,avg;
+                while(n>0)
+                {
+                    rem=n%10
+                    sum=sum+rem
+                    n=Math.floor(n/10)
+                    c++
+                }
+                avg=sum/c
+                document.write("Sum Of Digit="+sum)
+                document.write("<br>Average Of Digit="+avg)
+            }
+            n=eval(prompt("Enter Any No"))
+            Avg(n)
+
+        </script>
+    </body>
+    </html>
+</html>

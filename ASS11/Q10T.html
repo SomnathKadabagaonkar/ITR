@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Count Tags</title>
+</head>
+<body>
+
+  <p>Paragraph 1</p>
+  <p>Paragraph 2</p>
+  <p>Paragraph 3</p>
+  <button onclick="countPTags()">Count & Show</button>
+
+  <script>
+    function countPTags() 
+    {
+      var Tags = document.getElementsByTagName("p");
+      var result=Tags.length
+      alert("Number of <p> tags: " + result);
+    }
+  </script>
+
+</body>
+</html>

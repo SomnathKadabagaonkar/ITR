@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background on Dropdown Selection</title>
+</head>
+<body>
+    <h2>Select Background color</h2>
+
+    <select id="colorSelect" onchange="changeBackground()">
+
+        <option value="">Select Color</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="pink">Pink</option>
+        <option value="yellow">Yellow</option>
+        <option value="white">White</option>
+
+    </select>
+
+    <script>
+        function changeBackground() 
+        {
+            var selectedColor = document.getElementById("colorSelect").value;
+            document.body.style.backgroundColor = selectedColor;
+        }
+    </script>
+</body>
+</html>

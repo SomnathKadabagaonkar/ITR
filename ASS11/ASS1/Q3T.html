@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide</title>
+</head>
+<body>
+    <p>Paragraph-1</p>
+    <p>Paragraph-2</p>
+    <p>Paragraph-3</p>
+    <p>Paragraph-4</p>
+    <button onclick="Hide()">Hide</button>
+    <script>
+        i=0;
+    </script>
+   <script>
+    var value;
+     function Hide()
+     {          
+        var value=document.getElementsByTagName("p")
+        val=value;
+        for(i=0;i<val.length;i++)
+         {
+         val[i].style.display='none';
+         }
+    }
+    
+   </script> 
+</body>
+</html>

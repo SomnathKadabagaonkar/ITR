@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmatic Swicth</title>
+</head>
+<body>
+    <script>
+    var a,b,p,ch,add1,sub1,div1,mul1,mod1;
+    a=parseInt(prompt("Enter The Number A"))
+    b=parseInt(prompt("Enter The Number B"))
+    p=parseInt(prompt( "1 - Addition\n 2-  Subsraction\n 3- Division\n 4- Multiplication\n 5- Modulus\n"))
+
+
+    function add()
+    {
+        add1=a+b;
+        document.write("Addition : "+add1)
+    }
+     function sub()
+    {
+        sub1=a-b;
+        document.write("Substrction : "+sub1)
+    }
+     function div()
+    {
+        div1=a/b;
+        document.write("Division : "+div1)
+    }
+     function mul()
+    {
+        mul1=a*b;
+        document.write("Multiplication : "+mul1)
+    }
+     function mod()
+    {
+        mod1=a%b;
+       document.write("Modulus : "+mod1)
+    }
+    switch(p)
+    {
+        case 1:add();
+               break;
+        case 2:sub();
+               break;
+        case 3:div();
+               break;
+        case 4:mul();
+               break;
+        case 5:mod();
+               break;
+               default:
+              document.writeln("enter valid choice")
+    }
+  
+
+    </script>
+</body>
+</html>

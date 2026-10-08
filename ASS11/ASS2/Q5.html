@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChangeImg- Q5</title>
+</head>
+<body>
+    <img src="S.jpg" id="Para1" height="300px" width="300px">
+    <br><br>
+    <select id="Para2" onchange="ChangeImg()">
+
+        <option value="S.jpg" >Change1</option>
+         <option value="S1.jpg" >Change2</option>
+    </select>
+    <script>
+        function ChangeImg()
+        {
+            var para=document.getElementById("Para2").value;
+            var para2=document.getElementById("Para1").src=para
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Image</title>
+</head>
+<body>
+    <h2>Image Changer Example</h2>
+
+    <img id="myImage" src="S.jpg" alt="Image" width="200" height="150">
+
+    <br><br>
+
+    <button onclick="ChangeImage()">Change Image</button>
+
+    <script>
+        function ChangeImage() 
+        {
+            var imgage = document.getElementById("myImage");
+            imgage.src = "S1.jpg";
+        }
+    </script>
+</body>
+</html>

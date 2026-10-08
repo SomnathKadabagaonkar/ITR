@@ -1,0 +1,24 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Compound Interest</title>
+    </head>
+    <body>
+        <script>
+            function CI()
+            {
+                var p,r,t,ci;
+                p=eval(prompt("Enter Principal Amount"))
+                r=eval(prompt("Enter Rate"))
+                t=eval(prompt("Enter Time"))
+                ci=p*Math.pow((1+r),t)
+                document.write("<h3>Compound Interest="+ci)
+            }
+            CI()
+        </script>
+    </body>
+    </html>
+</html>

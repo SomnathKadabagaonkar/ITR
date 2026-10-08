@@ -1,0 +1,109 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SRAPC</title>
+    </head>
+    <body>
+        <script>
+            var
+            ch=eval(prompt("1-Sum 2-Rev 3-Arm  4-Palindrome  5-CountD"))
+            function SumD()
+            {
+                var sum=0;
+                var n=eval(prompt("Enter The Number For Sum Of Digits"))
+            while(n>0)
+            {
+            i=n%10
+            sum=sum+i;
+            n=Math.floor(n/10);
+            }
+                document.write("Sum Of Digits:"+sum)
+            }
+            function Rev()
+            {
+                var i,n,rem,rev=0;
+                var n=eval(prompt("Enter The Number for Rev"))
+            while(n>0) 
+            {
+            rem=n%10
+            rev=rev*10+rem
+            n=Math.floor(n/10);
+            }
+            document.write("Revese No:"+rev)
+            }
+            function Arm()
+            {
+                var i,n,rem,arm=0;
+                var n=eval(prompt("Enter The Number for Checking"))
+                var org=n
+            while(n>0) 
+            {
+            rem=n%10
+            arm=arm+(rem*rem*rem)
+            n=Math.floor(n/10);
+            }
+            if(arm==org)
+            {
+            document.write("Armstrong No ")
+            }
+            else
+            {
+                document.write("Not Armstrong Number ")
+            }
+            }
+            function Palindrome()
+            { 
+                var n=eval(prompt("Enter The Number For Palindorme Number"))
+                var org=n
+                var rev=0,rem;
+              
+            while(n>0) 
+            {
+            rem=n%10
+            rev=rev*10+rem
+            n=Math.floor(n/10);
+            }
+            if(rev==org)
+            {
+                document.write("Palindrome  Number :")
+            }
+            else
+            {
+                document.write("Not Palindrome Number :")
+            }
+            }
+            function CountD()
+            {
+                var n=eval(prompt("Enter The Number For Counting Digits Number"))
+                var org=n
+                var rem;
+                var c=0;
+                while(n>0)
+            {
+
+              rem=n%10
+              n=Math.floor(n/10);  
+              c++;
+            } 
+            document.write("No Of Digits :"+c)
+
+            }
+            switch(ch)
+            {
+                case 1:SumD();
+                break;
+                case 2:Rev();
+                break;
+                case 3:Arm();
+                break;
+                case 4:Palindrome();
+                break;
+                case 5:CountD();
+                break;
+            }
+            
+        </script>
+    </body>
+    </html>

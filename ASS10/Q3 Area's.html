@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area's</title>
+</head>
+<body>
+    <script>
+        var r,l,area,b,ch;
+        ch=eval(prompt("1 - Cricle 2 - Rectangle 3 - Triangle 4 - Square  5- Rhombus"))
+        function Circle()
+        {
+            var r=eval(prompt("Enter The Radius For Circle"))
+            area=3.14*r*r;
+            document.write("Area OF Cricle :"+area)
+        }
+         function Rectangle()
+        {
+            var l=eval(prompt("Enter The Length For Rectangle"))
+            var b=eval(prompt("Enter The  Breadth For Rectangle"))
+
+            area=l*b;
+                        document.write("Area OF Cricle :"+area)
+
+        }
+         function Triangle()
+        {
+            var l=eval(prompt("Enter The Length For Triangle"))
+            var b=eval(prompt("Enter The Breadth For Triangle")) 
+            area=0.5*l*b;
+                        document.write("Area OF Cricle :"+area)
+
+        }
+         function Square()
+        {
+            var r=eval(prompt("Enter The Sides For Square"))
+            area=r*r;
+                        document.write("Area OF Cricle :"+area)
+
+        }
+         function Rhombus()
+        {
+            var b=eval(prompt("Enter The 1st Diagonal  For Rhombus"))
+            var h=eval(prompt("Enter The  2nd Diagonal For Rhombus"))
+            area=0.5*b*h;
+                        document.write("Area OF Cricle :"+area)
+
+        }
+        switch(ch)
+        {
+            case 1:Circle();
+            break;
+            case 2:Rectangle();
+            break;
+            case 3:Triangle();
+            break;
+            case 4:Square();
+            break;
+            case 5:Rhombus();
+            break;
+        }
+        
+    </script>
+</body>
+</html>

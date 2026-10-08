@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Name -Q3</title>
+</head>
+<body>
+    <p id="Para1">Name :</p>
+    <input type="text" id="Para2" onchange="Change()" placeholder="Enter Name">
+    <script>
+        function Change()
+        {
+            var para=document.getElementById("Para2").value
+            document.getElementById("Para1").innerHTML=para
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area's</title>
+</head>
+<body>
+    <script>
+        var r,l,area,b,ch;
+        ch=eval(prompt("1-Factorial 2-Prime 3-Fibbo  4-Perfect  5-Mul-table"))
+        function Factorial()
+        {
+            var f=1;
+            var n=eval(prompt("Enter The Number For Factorial"))
+            for(i=1;i<=n;i++)
+        {
+            f=f*i;
+        }
+            document.write("Factorial Number :"+f)
+        }
+        function Prime()
+        {
+            var f=0,i;
+            var n=eval(prompt("Enter The Number for Prime"))
+        for(i=2;i<=n/2;i++)
+        {
+            if(n%i==0)
+        {
+            f=1;
+            break;
+        }
+        }
+        if(f==0)
+        {
+         document.write("Prime")
+        }
+        else
+        {
+         document.write("Not Prime")
+        }
+        }
+         function Fibbo()
+        {
+            var f0=0,f1=1,f2;
+            n=eval(prompt("Enter The Range"))
+            document.write(f0)
+            document.write(f1)
+
+           for(i=0;i<n;i++)
+           {
+            f2=f0+f1;
+            f0=f1;
+            f1=f2;
+            document.write("<h1>"+f2+"</h1>")
+           }
+        }
+         function Perfect()
+        { 
+            var f=0;
+            var n=eval(prompt("Enter The Number For Perfect Number"))
+            for(i=1;i<n;i++)
+        {
+            if(n%i==0)
+        {
+                    f=f+i;
+        
+        }
+        }
+        if(f==n)
+        {
+            document.write("Perfect Number :")
+        }
+        else
+        {
+            document.write("Not Perfect Number :")
+
+        }
+        }
+         function Multable()
+        {
+            var Number1;
+            Number1=eval(prompt("Enter The Number"))
+            for(i=1;i<=10;i++)
+        {
+           document.write(Number1+"*"+i+"="+Number1*i);
+           document.write("<br>")
+        }
+
+        }
+        switch(ch)
+        {
+            case 1:Factorial();
+            break;
+            case 2:Prime();
+            break;
+            case 3:Fibbo();
+            break;
+            case 4:Perfect();
+            break;
+            case 5:Multable();
+            break;
+        }
+        
+    </script>
+</body>
+</html>

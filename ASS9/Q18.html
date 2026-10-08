@@ -1,0 +1,28 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reverse Of Digit</title>
+    </head>
+    <body>
+        <script>
+            function reverse(n)
+            {
+                var rev=0,rem;
+                while(n>0)
+                {
+                    rem=n%10
+                    rev=rev*10+rem
+                    n=Math.floor(n/10)
+                }
+                return rev
+            }
+            var n=eval(prompt("Enter Any No"))
+            document.write("Reverse Of Digit="+reverse(n))
+            
+        </script>
+    </body>
+    </html>
+</html>

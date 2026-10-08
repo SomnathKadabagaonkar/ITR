@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmatic Swicth</title>
+</head>
+<body>
+    <script>
+    var a,p,ch,add1,sub1,div1,mul1,mod1;
+    a=parseInt(prompt("Enter The Number A"))
+    p=parseInt(prompt( "1 - Square\n 2- Cube\n 3- Sqroot\n 4- Oddeven\n 5- Posneg\n"))
+
+
+    function square()
+    {
+        add1=a*a;
+        document.write("Square : "+add1)
+    }
+     function cube()
+    {
+        sub1=a*a*a;
+        document.write("Cube : "+sub1)
+    }
+     function sqroot()
+    {
+        div1=Math.sqrt(a)
+        document.write("SquareRoot : "+div1)
+    }
+     function oddeven()
+    {
+        if(a%2==0)
+    {
+        document.write("Even")
+    }
+    else
+    {
+        document.write("Odd")
+    }
+    }
+    function posneg()
+    {
+        if(a>0)
+    {
+        document.write("Positive")
+    }
+    else
+    {
+        document.write("Negative")
+    }
+    }
+    
+    
+    switch(p)
+    {
+        case 1:square();
+               break;
+        case 2:cube();
+               break;
+        case 3:sqroot();
+               break;
+        case 4:oddeven();
+               break;
+        case 5:posneg();
+               break;
+               default:
+              document.writeln("enter valid choice")
+    }
+  
+
+    </script>
+</body>
+</html>

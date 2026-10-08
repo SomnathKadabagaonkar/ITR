@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text</title>
+   
+</head>
+<body>
+     <h1 id="demo">Para One </h1>
+    <button onclick="Change()">Click</button>
+   <script>
+    i=0
+   </script>
+    <script>
+        function Change()
+        {
+            
+            if(i==0)
+        {
+        var para=document.getElementById("demo")
+        para.innerText="Hi";
+        i=1;
+        }
+        else
+        {
+        var para=document.getElementById("demo")
+        para.innerText="Para One";
+        i=0;
+        }
+    }
+    </script>
+</body>
+</html>
